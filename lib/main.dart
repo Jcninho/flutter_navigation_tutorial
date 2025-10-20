@@ -1,0 +1,19 @@
+import 'package:flutter/material.dart';
+import 'home_page.dart';
+
+void main() {
+  runApp(const NavigationApp());
+}
+
+class NavigationApp extends StatelessWidget {
+  const NavigationApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Navigation Demo',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const HomePage(),
+    );
+  }
+}
